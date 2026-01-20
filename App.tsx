@@ -6,6 +6,8 @@ import { INITIAL_PORTFOLIO } from './constants';
 import { PortfolioItem, SiteSettings } from './types';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
+import logo from './logo.png';
+import profile from './profile.jpg';
 
 const Navbar = ({ isEditing, clearEditing, siteSettings }: { isEditing: boolean, clearEditing: () => void, siteSettings: SiteSettings }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -121,8 +123,10 @@ const AppContent = () => {
     
     const defaults: SiteSettings = {
       heroVideoUrl: 'https://www.youtube.com/watch?v=실제_메인_쇼릴_ID',
-      aboutImageUrl: './profile.jpg', 
-      logoUrl: './logo.png', 
+      // aboutImageUrl: '/profile.jpg', // 루트 폴더의 profile.jpg 안돼서 임포트 한걸로 사용함
+      // logoUrl: '/logo.png',       // 루트 폴더의 logo.png 안돼서 임포트 한걸로 사용함
+      logoUrl: logo,
+      aboutImageUrl: profile,
       email: 'hayeong0369@gmail.com',
       phone: '010-3167-2080',
       logoColor: '#A5F3FC'
