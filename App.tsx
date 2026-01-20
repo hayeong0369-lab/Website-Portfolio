@@ -119,15 +119,12 @@ const AppContent = () => {
   const [siteSettings, setSiteSettings] = useState<SiteSettings>(() => {
     const saved = localStorage.getItem('ha_young_site_settings');
     
-    // [중요] 배포 시 모든 사람에게 보여줄 사이트 기본 설정입니다.
     const defaults: SiteSettings = {
       heroVideoUrl: 'https://www.youtube.com/watch?v=실제_메인_쇼릴_ID',
-      // 본인 사진도 profile.jpg라는 이름으로 폴더에 넣고 Push하면 적용됩니다.
       aboutImageUrl: './profile.jpg', 
-      // 로고 파일을 logo.png로 저장해서 Push하면 적용됩니다.
       logoUrl: './logo.png', 
       email: 'hayeong0369@gmail.com',
-      phone: '010-xxxx-xxxx',
+      phone: '010-3167-2080',
       logoColor: '#A5F3FC'
     };
     return saved ? { ...defaults, ...JSON.parse(saved) } : defaults;

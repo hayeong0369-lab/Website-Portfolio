@@ -121,7 +121,7 @@ const ContactModal = ({ isOpen, onClose, email, phone }: { isOpen: boolean, onCl
               rel="noopener noreferrer"
               className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-zinc-500 hover:bg-[#1769FF] hover:text-white transition-all border border-white/5 hover:border-[#1769FF]/50 hover:scale-110"
             >
-              <span className="text-[22px] font-black leading-none -translate-y-[1px]">Be</span>
+              <span className="text-[22px] font-black leading-none -translate-y-[2px]">Be</span>
             </a>
           </div>
         </div>
@@ -175,11 +175,12 @@ const About = ({ imageUrl, onOpenShowreel, onOpenContact }: { imageUrl: string, 
           <div className="aspect-[4/5] bg-zinc-900 rounded-[3rem] overflow-hidden shadow-2xl border border-white/5 relative">
             <img src={imageUrl} alt="Hwang Hayeong" className="w-full h-full object-cover grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000" />
             
-            <div className="absolute inset-0 p-10 flex flex-col justify-end z-20 transition-opacity duration-700">
+            {/* 가독성을 위한 상시 그래디언트 오버레이 추가 및 트랜지션 제거하여 사라짐 방지 */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent p-10 flex flex-col justify-end z-20">
                <div className="space-y-4">
                   <h2 className="text-[#3b82f6] font-bold tracking-widest text-sm uppercase">Motion Graphic Designer</h2>
                   <h1 className="text-6xl md:text-7xl font-black tracking-tighter leading-tight text-white">황하영</h1>
-                  <p className="text-lg text-zinc-300 max-w-sm leading-relaxed font-medium">
+                  <p className="text-lg text-zinc-200 max-w-sm leading-relaxed font-medium">
                     기획 의도를 이해하고,<br />끝까지 소통하는 모션그래픽 디자이너
                   </p>
                   <div className="flex gap-4 pt-4">
