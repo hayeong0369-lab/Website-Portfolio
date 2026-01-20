@@ -103,7 +103,7 @@ const ContactModal = ({ isOpen, onClose, email, phone }: { isOpen: boolean, onCl
               href="https://www.instagram.com/hayeong0369/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-zinc-400 hover:text-white hover:bg-[#E4405F] transition-all border border-white/5 hover:border-[#E4405F]/50"
+              className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-zinc-500 hover:bg-[#E4405F] hover:text-white transition-all border border-white/5 hover:border-[#E4405F]/50 hover:scale-110"
             >
               <Instagram size={28} />
             </a>
@@ -111,7 +111,7 @@ const ContactModal = ({ isOpen, onClose, email, phone }: { isOpen: boolean, onCl
               href="https://www.youtube.com/channel/UC704hUiU8_yXi-VwKak6n6w" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-zinc-400 hover:text-white hover:bg-[#FF0000] transition-all border border-white/5 hover:border-[#FF0000]/50"
+              className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-zinc-500 hover:bg-[#FF0000] hover:text-white transition-all border border-white/5 hover:border-[#FF0000]/50 hover:scale-110"
             >
               <Youtube size={28} />
             </a>
@@ -119,9 +119,9 @@ const ContactModal = ({ isOpen, onClose, email, phone }: { isOpen: boolean, onCl
               href="https://www.behance.net/fe5e633e" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-zinc-400 hover:text-white hover:bg-[#1769FF] transition-all border border-white/5 hover:border-[#1769FF]/50"
+              className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-zinc-500 hover:bg-[#1769FF] hover:text-white transition-all border border-white/5 hover:border-[#1769FF]/50 hover:scale-110"
             >
-              <span className="text-[22px] font-black leading-none mt-1">Be</span>
+              <span className="text-[22px] font-black leading-none -translate-y-[1px]">Be</span>
             </a>
           </div>
         </div>
@@ -175,7 +175,7 @@ const About = ({ imageUrl, onOpenShowreel, onOpenContact }: { imageUrl: string, 
           <div className="aspect-[4/5] bg-zinc-900 rounded-[3rem] overflow-hidden shadow-2xl border border-white/5 relative">
             <img src={imageUrl} alt="Hwang Hayeong" className="w-full h-full object-cover grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000" />
             
-            <div className="absolute inset-0 p-10 flex flex-col justify-end z-20 group-hover:opacity-0 transition-opacity duration-700">
+            <div className="absolute inset-0 p-10 flex flex-col justify-end z-20 transition-opacity duration-700">
                <div className="space-y-4">
                   <h2 className="text-[#3b82f6] font-bold tracking-widest text-sm uppercase">Motion Graphic Designer</h2>
                   <h1 className="text-6xl md:text-7xl font-black tracking-tighter leading-tight text-white">황하영</h1>
@@ -221,7 +221,7 @@ const Portfolio = ({ items }: { items: PortfolioItem[] }) => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-40">
           <span className="text-[#3b82f6] font-bold tracking-widest text-xs uppercase mb-4 block">Selected Works</span>
-          <h2 className="text-5xl md:text-8xl font-black tracking-tighter mb-8 text-white">포트폴리오</h2>
+          <h2 className="text-4xl md:text-7xl font-black tracking-tighter mb-8 text-white">포트폴리오</h2>
           <div className="w-24 h-1 bg-[#3b82f6] mx-auto rounded-full"></div>
         </div>
 
@@ -263,7 +263,7 @@ const Portfolio = ({ items }: { items: PortfolioItem[] }) => {
                 <div className="flex-grow space-y-10">
                   <div className="space-y-4">
                     <span className="text-[#3b82f6] font-black text-sm tracking-[0.2em] uppercase block">Project 0{index + 1}</span>
-                    <h3 className="text-4xl md:text-5xl font-black tracking-tighter group-hover:text-[#3b82f6] transition-colors leading-tight text-white">
+                    <h3 className="text-3xl md:text-4xl font-black tracking-tighter group-hover:text-[#3b82f6] transition-colors leading-tight text-white">
                       {item.title}
                     </h3>
                   </div>
